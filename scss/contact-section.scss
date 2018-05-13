@@ -1,0 +1,85 @@
+@import 'zmienne';
+
+#contact {
+    // background-color: $light-gray;
+    overflow: hidden;
+
+    .contact-data {
+
+        .row {
+            margin: 2vw;
+
+            h2 {
+                font-size: 38px;
+                ;
+            }
+
+            address {
+                font-style: normal;
+                margin: 72px 0;
+                line-height: 25px;
+
+                a {
+                    color: $light;
+                }
+            }
+
+            .contact-social-icons {
+                a {
+                    display: inline-block;
+                    color: $light;
+                    height: 38px;
+                    width: 38px;
+                    text-align: center;
+                    line-height: 38px;
+                    border: 1px solid $light;
+                    margin-right: 30px;
+                    font-size: 22px;
+
+                    &:hover {
+                        color: $navyblue;
+                        border: 1px solid $navyblue;
+                        background-color: white;
+                    }
+                }
+
+
+            }
+
+
+        }
+        form {
+            input {
+                color: white;
+                @include pole-tekstowe;
+
+                &:focus {
+                    background-color: rgba($color: #678e96, $alpha: 0.2);
+                }
+            }
+            textarea {
+                @include pole-tekstowe;
+
+                &:focus {
+                    background-color: rgba($color: #678e96, $alpha: 0.2);
+                }
+
+            }
+            #wyslij {
+                background-color: $light;
+                color: #fff;
+                width: auto;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 15px 30px;
+                float: right;
+                border: 2px $light solid;
+                
+                &:hover{
+                    background-color: white;
+                    color: $light;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import 'zmienne';
+
+footer{
+    background-color: $footercolor;
+    color: white;
+    padding: 0 80px;
+    
+    p{
+        margin: 0;
+    }
+}

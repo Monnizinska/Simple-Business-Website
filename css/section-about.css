@@ -1,0 +1,10 @@
+#about {
+  background-color: #ECECEC; }
+  #about img {
+    border: 14px solid white;
+    border-radius: 15px;
+    box-sizing: content-box;
+    max-height: 350px;
+    max-width: 100%; }
+  #about p {
+    font-size: 18px; }

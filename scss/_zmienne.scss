@@ -1,0 +1,27 @@
+
+$gray: #3f4551;
+$light-gray: #808080;
+$light: #678e96;
+$soft-gray:#B1BCC4;
+$blue: #ECECEC;
+$navyblue: #213b50;
+$pole-tekstowe: #2b4a64;
+$footercolor: #142634;
+
+$lato: 'Lato', sans-serif;
+
+
+@mixin cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin pole-tekstowe {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-color: solid $light 2px;
+    color: #fff;
+}

@@ -1,0 +1,57 @@
+#contact {
+  overflow: hidden; }
+  #contact .contact-data .row {
+    margin: 2vw; }
+    #contact .contact-data .row h2 {
+      font-size: 38px; }
+    #contact .contact-data .row address {
+      font-style: normal;
+      margin: 72px 0;
+      line-height: 25px; }
+      #contact .contact-data .row address a {
+        color: #678e96; }
+    #contact .contact-data .row .contact-social-icons a {
+      display: inline-block;
+      color: #678e96;
+      height: 38px;
+      width: 38px;
+      text-align: center;
+      line-height: 38px;
+      border: 1px solid #678e96;
+      margin-right: 30px;
+      font-size: 22px; }
+      #contact .contact-data .row .contact-social-icons a:hover {
+        color: #213b50;
+        border: 1px solid #213b50;
+        background-color: white; }
+  #contact .contact-data form input {
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-color: solid #678e96 2px;
+    color: #fff; }
+    #contact .contact-data form input:focus {
+      background-color: rgba(103, 142, 150, 0.2); }
+  #contact .contact-data form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-color: solid #678e96 2px;
+    color: #fff; }
+    #contact .contact-data form textarea:focus {
+      background-color: rgba(103, 142, 150, 0.2); }
+  #contact .contact-data form #wyslij {
+    background-color: #678e96;
+    color: #fff;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 30px;
+    float: right;
+    border: 2px #678e96 solid; }
+    #contact .contact-data form #wyslij:hover {
+      background-color: white;
+      color: #678e96; }

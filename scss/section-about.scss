@@ -1,0 +1,17 @@
+@import 'zmienne';
+
+#about {
+	background-color: $blue;
+    
+    img{
+        border: 14px solid white;
+        border-radius: 15px;
+        box-sizing: content-box;
+        max-height: 350px;
+        max-width: 100%;
+    }
+    
+    p{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,6 @@
+#main-nav #navigation-menu {
+  text-align: center; }
+  #main-nav #navigation-menu a {
+    opacity: 0; }
+  #main-nav #navigation-menu a:hover {
+    color: #3f4551; }

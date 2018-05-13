@@ -1,0 +1,20 @@
+@import 'zmienne';
+
+#main-nav {
+
+    #navigation-menu {
+        text-align: center;
+
+        a {
+            opacity: 0;
+
+        }
+
+        a {
+            &:hover {
+                color: $gray;
+            }
+        }
+
+    }
+}

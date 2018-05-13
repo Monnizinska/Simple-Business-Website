@@ -1,0 +1,157 @@
+#main-nav #navigation-menu {
+  text-align: center; }
+  #main-nav #navigation-menu a {
+    opacity: 0; }
+  #main-nav #navigation-menu a:hover {
+    color: #3f4551; }
+
+#main-header {
+  color: #3f4551;
+  background-image: url(../css/img/ana-cruz-591325-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh; }
+  #main-header .header-box {
+    background-color: rgba(255, 255, 255, 0.7); }
+    #main-header .header-box h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 5em;
+      font-weight: 400; }
+    #main-header .header-box h2 {
+      font-weight: 200;
+      font-size: 2em; }
+
+#about {
+  background-color: #ECECEC; }
+  #about img {
+    border: 14px solid white;
+    border-radius: 15px;
+    box-sizing: content-box;
+    max-height: 350px;
+    max-width: 100%; }
+  #about p {
+    font-size: 18px; }
+
+#portfolio .portfolio-item {
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  position: relative; }
+
+#portfolio .item-mask {
+  background-color: rgba(103, 142, 150, 0.8);
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  font-size: initial;
+  width: 100%;
+  height: 100%;
+  opacity: 0; }
+
+#portfolio .item-mask:hover {
+  opacity: 1; }
+
+#portfolio .item-content {
+  border: 1px solid white;
+  margin: 10px;
+  height: 330px;
+  position: relative; }
+
+#portfolio .item-content-inner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  padding: 5px;
+  color: white; }
+
+#contact {
+  overflow: hidden; }
+  #contact .contact-data .row {
+    margin: 2vw; }
+    #contact .contact-data .row h2 {
+      font-size: 38px; }
+    #contact .contact-data .row address {
+      font-style: normal;
+      margin: 72px 0;
+      line-height: 25px; }
+      #contact .contact-data .row address a {
+        color: #678e96; }
+    #contact .contact-data .row .contact-social-icons a {
+      display: inline-block;
+      color: #678e96;
+      height: 38px;
+      width: 38px;
+      text-align: center;
+      line-height: 38px;
+      border: 1px solid #678e96;
+      margin-right: 30px;
+      font-size: 22px; }
+      #contact .contact-data .row .contact-social-icons a:hover {
+        color: #213b50;
+        border: 1px solid #213b50;
+        background-color: white; }
+  #contact .contact-data form input {
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-color: solid #678e96 2px;
+    color: #fff; }
+    #contact .contact-data form input:focus {
+      background-color: rgba(103, 142, 150, 0.2); }
+  #contact .contact-data form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-color: solid #678e96 2px;
+    color: #fff; }
+    #contact .contact-data form textarea:focus {
+      background-color: rgba(103, 142, 150, 0.2); }
+  #contact .contact-data form #wyslij {
+    background-color: #678e96;
+    color: #fff;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 30px;
+    float: right;
+    border: 2px #678e96 solid; }
+    #contact .contact-data form #wyslij:hover {
+      background-color: white;
+      color: #678e96; }
+
+footer {
+  background-color: #142634;
+  color: white;
+  padding: 0 80px; }
+  footer p {
+    margin: 0; }
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #3f4551;
+  background-color: white;
+  font-weight: 300; }
+  body .color {
+    color: #678e96; }
+  body h2 {
+    font-family: 'Montserrat', sans-serif; }
+  body #portfolio-item-1 {
+    background-image: url("../css/img/andrew-neel-237802-unsplash.jpg"); }
+  body #portfolio-item-2 {
+    background-image: url("../css/img/le-buzz-567112-unsplash.jpg"); }
+  body #portfolio-item-3 {
+    background-image: url("../css/img/stil-479024-unsplash.jpg"); }
+  body #portfolio-item-4 {
+    background-image: url("../css/img/jeff-sheldon-3219-unsplash.jpg");
+    background-position: bottom; }
+  body .icon {
+    border: solid #678e96 2px;
+    height: 50px;
+    width: 50px; }
