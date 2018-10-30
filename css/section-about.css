@@ -1,10 +1,25 @@
 #about {
+  margin-top: -50px;
   background-color: #ECECEC; }
+  #about .about {
+    opacity: 0;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  #about h1, #about .gray-box, #about h5 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s; }
   #about img {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
     border: 14px solid white;
     border-radius: 15px;
     box-sizing: content-box;
     max-height: 350px;
     max-width: 100%; }
   #about p {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
     font-size: 18px; }

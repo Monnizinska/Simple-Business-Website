@@ -1,17 +1,36 @@
 @import 'zmienne';
 
 #about {
-	background-color: $blue;
-    
-    img{
+    margin-top: -50px;
+    background-color: $blue;
+
+    .about{
+        opacity: 0;
+        -webkit-animation-timing-function: ease;
+        animation-timing-function: ease;
+        animation-duration: 0.5s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    h1, .gray-box, h5{
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s; 
+    }
+
+    img {
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
         border: 14px solid white;
         border-radius: 15px;
         box-sizing: content-box;
         max-height: 350px;
         max-width: 100%;
     }
-    
-    p{
+
+    p {
+        -webkit-animation-delay: 1.5s;
+        animation-delay: 1.5s;
         font-size: 18px;
     }
 }

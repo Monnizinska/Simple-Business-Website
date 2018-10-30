@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Business Web</title>
+
+    <!-- Favicona -->
+    <link rel="shortcut icon" href="css/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="css/img/favicon.ico" type="image/x-icon">
 
     <!-- Linnk do Bootstrapa -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -23,37 +27,29 @@
 </head>
 
 <body>
-
-    <!-- Navbar start -->
-    <nav id="main-nav" class="navbar navbar-expand-lg fixed-top navbar-light">
-
-        <a class="navbar-brand" href="#"></a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation-menu" aria-controls="navigation-menu"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse color" id="navigation-menu">
-            <div class="navbar-nav mr-auto w-100 justify-content-end">
-                <a href="#about" class="nav-item nav-link">O mnie</a>
-                <a href="#skills" class="nav-item nav-link">Umiejętności</a>
-                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                <a href="#contact" class="nav-item nav-link">Kontakt</a>
-            </div>
+    <!-- Frame start -->
+    <div class="frame-box d-none d-md-block">
+        <div class="bottom frame-x fixed-bottom"></div>
+        <div class="left frame-y"></div>
+        <div class="right frame-y"></div>
+        <div class="top frame-x d-flex">
+            <h6 class="align-self-center text-uppercase pl-5">Meryl / Streep</h6>
         </div>
+    </div>
 
-    </nav>
-    <!-- Navbar End -->
-
+    <!-- Frame End -->
 
     <!-- Header Start -->
     <header id="main-header" class="d-flex justify-content-center align-items-center">
 
         <div class="text-center header-box p-4">
-            <h1 class="display-4">Meryl
-                <span class="color">Streep</span>
-            </h1>
-            <h2>Graphic Designer</h2>
+            <a id="square" class="name">
+                <span class="line -right"></span>
+                <span class="line -top"></span>
+                <span class="line -left"></span>
+                <span class="line -bottom"></span>
+            </a>
+            <img class="flower" src="css/img/hisu-lee-169301-unsplash.jpg" alt="flower">
         </div>
 
     </header>
@@ -61,25 +57,25 @@
 
 
     <!-- Section About -->
-    <section id="about" class="container-fluid py-5 text-center">
-
-        <h2 class="py-5">O
-            <span class="color">mnie</span>
-        </h2>
+    <section id="about" class="container-fluid py-5">
+        <div class="about col-md-7 py-5 ml-auto pl-md-5">
+            <h5 class="pb-3">about me</h5>
+            <h1 class="mr-md-5 pr-md-5"> Hi, I'm Meryl, Graphic Designer based in Barcelona
+            </h1>
+            <div class="gray-box"></div>
+        </div>
         <div class="row pb-5">
-
             <div class="col-10 col-md-5 m-auto image-responsive">
-                <img src="css/img/jens-lindner-123168-unsplash.jpg" alt="Jan Nowak">
+                <img class="about" src="css/img/jens-lindner-123168-unsplash.jpg" alt="about">
             </div>
-
             <div class="col-10 col-md-5 m-auto py-5">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolorum dolorem, cum excepturi culpa, a iste
-                    perspiciatis inventore consequuntur fugiat error sapiente doloribus? Dolore dignissimos quod repudiandae
-                    consectetur ipsam obcaecati libero deserunt consequatur, ducimus esse porro tempore quae. Reiciendis
-                    mollitia quam officia inventore ea praesentium repe Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Reprehenderit eos provident unde quas laudantium voluptatibus molestias magnam nobis ipsam sed
-                    eaque velit, sit, saepe consectetur veniam, vero molestiae, voluptates earum explicabo! Labore, quos
-                    libero ipsam repudiandae error, alias dicta vero!</p>
+                <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolorum dolorem, cum
+                    excepturi culpa,
+                    a iste perspiciatis inventore consequuntur fugiat error sapiente doloribus? Dolore dignissimos quod
+                    repudiandae consectetur ipsam obcaecati libero deserunt consequatur, ducimus esse porro tempore
+                    quae. Reiciendis mollitia quam officia inventore ea praesentium repe Lorem ipsum dolor sit amet,
+                    consectetur adipisicing
+                    elit. Reprehenderit eos provident unde quas laudantium voluptatibus molestias magnam nobis ipsam</p>
             </div>
 
         </div>
@@ -91,120 +87,130 @@
     <!-- Section Skills -->
 
     <section id="skills" class="container-fluid py-5 text-center">
+        <h5 class="pb-3">services</h5>
+        <h1 class="col-11 mx-auto">what can I do for you?</h1>
+        <div class="gray-box mx-auto"></div>
+        <p class="m-auto col-8 py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus rerum id error
+            nisi, deserunt debitis soluta ratione
+            ad sunt recusandae accusamus cupiditate veritatis, dolores quae omnis dignissimos quod ut unde voluptatum
+            non
+            perferendis aspernatur consectetur! Eligendi inventore sapiente atque optio fugit rem rerum, officiis sequi
+            omnis,
+            odio nam autem eaque saepe, ullam doloribus consectetur, eveniet magnam maxime. Debitis, aliquid,
+            veritatis?</p>
 
-        <h2>Moje
-            <span class="color">umiejętności</span>
-        </h2>
-        <p class="m-auto col-10 py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus rerum id error nisi, deserunt debitis soluta ratione
-            ad sunt recusandae accusamus cupiditate veritatis, dolores quae omnis dignissimos quod ut unde voluptatum non
-            perferendis aspernatur consectetur! Eligendi inventore sapiente atque optio fugit rem rerum, officiis sequi omnis,
-            odio nam autem eaque saepe, ullam doloribus consectetur, eveniet magnam maxime. Debitis, aliquid, veritatis?</p>
-
-        <div id="skills-icon" class="row justify-content-center">
-
-            <figure class="col-3">
+        <div id="skills-icon" class="row justify-content-center col-8 mx-auto">
+            <figure class="col-md-3 mx-auto py-5">
                 <h2 class="icon m-auto">Ps</h2>
                 <figcaption class="mt-2">Adobe
                     <br> Photoshop</figcaption>
             </figure>
-            <figure class="col-3">
+            <figure class="col-md-3 mx-auto py-5">
                 <h2 class="icon m-auto">Ai</h2>
                 <figcaption class="mt-2">Adobe
                     <br> Illustrator</figcaption>
             </figure>
-            <figure class="col-3">
+            <figure class="col-md-3 mx-auto py-5">
                 <h2 class="icon m-auto">Id</h2>
                 <figcaption class="mt-2">Indesign</figcaption>
             </figure>
-
-
         </div>
 
     </section>
-   
+
     <!-- Section Skills End-->
 
-
     <!-- Section Portfolio Start -->
-    <section id="portfolio" class="container-fluid py-5 text-center">
-        <h2 class="pb-5">Moje
-            <span class="color">portfolio</span>
-        </h2>
-
-        <div class="row m-0 p-0">
-
-            <div class="portfolio-item col-sm-12 col-md-6 col-lg-4 m-0 p-0" id="portfolio-item-1">
-                <div class="item-mask">
-                    <div class="item-content">
-                        <div class="item-content-inner">
-                            <h3>Lorem 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus debitis voluptatem nostrum
-                                iure iste commodi a totam, deserunt dignissimos quos similique dolores inventore accusantium
-                                sed aliquid amet accusamus est tempora.</p>
-                            <h4>Wykorzystane technologie: </h4>
-                            <p>HTML5, CSS3, JavaScript, jQuery</p>
-                            <a href="#">
-                                <i class="fa fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item col-sm-12 col-md-6 col-lg-4 m-0 p-0" id="portfolio-item-2">
-                <div class="item-mask">
-                    <div class="item-content">
-                        <div class="item-content-inner">
-                            <h3>Lorem 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia libero officia, corrupti repellendus
-                                vero. Saepe rem delectus ipsa totam sequi consequatur. Eveniet asperiores soluta, sit voluptatibus
-                                architecto, atque repellendus. Enim.</p>
-                            <h4>Wykorzystane technologie: </h4>
-                            <p>HTML5, CSS3, JavaScript, jQuery</p>
-                            <a href="#">
-                                <i class="fa fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item col-sm-12 col-md-6 col-lg-4 m-0 p-0" id="portfolio-item-3">
-                <div class="item-mask">
-                    <div class="item-content">
-                        <div class="item-content-inner">
-                            <h3>Lorem 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quasi neque itaque fuga provident
-                                dolore nesciunt nam fugiat tempora vero. Facilis minus, eos enim fugit consequuntur. Veritatis
-                                repellat facere quibusdam.</p>
-                            <h4>Wykorzystane technologie: </h4>
-                            <p>HTML5, CSS3, JavaScript, jQuery</p>
-                            <a href="#">
-                                <i class="fa fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item col-12 col-md-6 col-lg-12 m-0 p-0" id="portfolio-item-4">
-                <div class="item-mask">
-                    <div class="item-content">
-                        <div class="item-content-inner">
-                            <h3>Lorem 4</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quasi neque itaque fuga provident
-                                dolore nesciunt nam fugiat tempora vero. Facilis minus, eos enim fugit consequuntur. Veritatis
-                                repellat facere quibusdam.</p>
-                            <h4>Wykorzystane technologie: </h4>
-                            <p>HTML5, CSS3, JavaScript, jQuery</p>
-                            <a href="#">
-                                <i class="fa fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+    <section id="portfolio" class="container-fluid py-5 text-center col-11">
+        <div class="port">
+            <h5 class="pb-3">portfolio</h5>
+            <div class="gray-box mx-auto mb-5"></div>
         </div>
+            <div class="row m-0 p-0">
+                <div class="portfolio-item col-sm-12 col-md-6 col-lg-4 m-0 p-0 port" id="portfolio-item-1">
+                    <div class="item-mask">
+                        <div class="item-content">
+                            <div class="item-content-inner">
+                                <h3>Case 1</h3>
+                                <p class="col-10 m-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Temporibus debitis voluptatem
+                                    nostrum
+                                    iure iste commodi a totam, deserunt dignissimos quos similique dolores inventore
+                                    accusantium
+                                    sed aliquid amet accusamus est tempora.</p>
+                                <p>HTML5, CSS3, JavaScript, jQuery</p>
+                                <a href="#">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item col-sm-12 col-md-6 col-lg-4 m-0 p-0 port" id="portfolio-item-2">
+                    <div class="item-mask">
+                        <div class="item-content">
+                            <div class="item-content-inner">
+                                <h3>Case 2</h3>
+                                <p class="col-10 m-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+                                    libero officia, corrupti
+                                    repellendus
+                                    vero. Saepe rem delectus ipsa totam sequi consequatur. Eveniet asperiores soluta,
+                                    sit
+                                    voluptatibus
+                                    architecto, atque repellendus. Enim.</p>
+                                <p>HTML5, CSS3, JavaScript, jQuery</p>
+                                <a href="#">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item col-sm-12 col-md-6 col-lg-4 m-0 p-0 port" id="portfolio-item-3">
+                    <div class="item-mask">
+                        <div class="item-content">
+                            <div class="item-content-inner">
+                                <h3>Case 3</h3>
+                                <p class="col-10 m-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Fugit
+                                    quasi neque itaque fuga
+                                    provident
+                                    dolore nesciunt nam fugiat tempora vero. Facilis minus, eos enim fugit
+                                    consequuntur.
+                                    Veritatis
+                                    repellat facere quibusdam.</p>
+                                <p>HTML5, CSS3, JavaScript, jQuery</p>
+                                <a href="#">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item col-12 col-md-6 col-lg-12 m-0 p-0 port" id="portfolio-item-4">
+                    <div class="item-mask">
+                        <div class="item-content">
+                            <div class="item-content-inner">
+                                <h3>Case 4</h3>
+                                <p class="col-9 m-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
+                                    quasi neque itaque fuga
+                                    provident
+                                    dolore nesciunt nam fugiat tempora vero. Facilis minus, eos enim fugit
+                                    consequuntur.
+                                    Veritatis
+                                    repellat facere quibusdam.</p>
+                                <p>HTML5, CSS3, JavaScript, jQuery</p>
+                                <a href="#">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
     </section>
     <!-- Section Portfolio End -->
@@ -213,15 +219,15 @@
     <!-- Contact Section Start -->
 
     <section id="contact" class="mx-5 text-center text-md-left">
-        <hr>
         <div class="contact-data container">
-            <div class="row">
+            <div class="row pb-5 mb-5">
                 <div class="col-md-12 col-lg-6 text-sm-center text-lg-left">
-                    <h2>Meryl
-                        <span class="color">Streep</span>
-                    </h2>
+                    <h5 class="py-3">contact</h5>
+                    <h1>Meryl Streep
+                    </h1>
+                    <div class="gray-box mx-auto ml-lg-1"></div>
                     <address>
-                        ul. Mostowa 6/13
+                        Mostowa 6/13
                         <br> 31-061 Warszawa
                         <br>
                         <br> tel: 606 74 57 59
@@ -230,29 +236,26 @@
                     </address>
                     <div class="contact-social-icons">
                         <div class="row m-0 p-0 w-100">
-                        <a href="#" class="col-3  m-auto">
-                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" class="col-3  m-auto">
-                            <i class="fab fa-google-plus-g" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" class="col-3  m-auto">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" class="col-3  m-auto">
-                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                        </a>
-                    </div>
+                            <a href="#" class="col-3  m-auto">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="col-3  m-auto">
+                                <i class="fab fa-google-plus-g" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="col-3  m-auto">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="col-3  m-auto">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
-
-
                 <form class="col-sm-12 col-lg-6 py-5 text-lg-left">
-                    <input type="text" name='name' placeholder="Imię i nazwisko" />
-                    <input type="email" name="email" placeholder="Adres e-mail" />
-                    <textarea name="message" placeholder="Wiadomość"></textarea>
-                    <input id="wyslij" type="submit" value="Wyślij">
+                    <input type="text" name='name' placeholder="name" />
+                    <input type="email" name="email" placeholder="e-mail" />
+                    <textarea name="message" placeholder="message"></textarea>
+                    <input id="wyslij" type="submit" value="send">
                 </form>
             </div>
         </div>
@@ -260,16 +263,6 @@
     </section>
 
     <!-- Stop Section Start -->
-
-
-    <!-- Footer Start -->
-
-    <footer>
-        <p class="copyright">Copyright &copy Meryl Streep</p>
-    </footer>
-
-    <!-- Footer Stop -->
-
 
 
     <!-- SCRIPTS -->
@@ -285,7 +278,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
-    <script src="js/nav.js"></script>
+    <script src="js/scroll.js"></script>
     <!-- SCRIPTS koniec -->
 
 </body>

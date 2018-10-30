@@ -7,31 +7,155 @@
 
 #main-header {
   color: #3f4551;
-  background-image: url(../css/img/ana-cruz-591325-unsplash.jpg);
+  background-color: #ECECEC;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh; }
-  #main-header .header-box {
-    background-color: rgba(255, 255, 255, 0.7); }
-    #main-header .header-box h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 5em;
-      font-weight: 400; }
-    #main-header .header-box h2 {
-      font-weight: 200;
-      font-size: 2em; }
+  #main-header .header-box .flower {
+    transform: rotate(45deg);
+    opacity: 0;
+    -webkit-animation: showme 1s linear forwards;
+    animation: showme 1s linear forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    height: 350px;
+    width: 350px; }
+  #main-header .header-box .name {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5em;
+    font-weight: 400;
+    padding: 0.7em calc(0.7em * 1.2);
+    display: inline-block;
+    border: 3px solid transparent;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+    color: #666654; }
+    #main-header .header-box .name .text {
+      transform: translate3d(0, 0.7em, 0);
+      display: block;
+      transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s; }
+    #main-header .header-box .name:after {
+      position: absolute;
+      content: '';
+      bottom: -3px;
+      left: calc(0.7em * 1.2);
+      right: calc(0.7em * 1.2);
+      height: 1.25px;
+      transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+      transform-origin: left; }
+  #main-header .header-box .line {
+    position: absolute;
+    background: #3f4551; }
+    #main-header .header-box .line.-right, #main-header .header-box .line.-left {
+      width: 3px;
+      bottom: -3px;
+      top: -3px;
+      transform: scale3d(1, 0, 1); }
+    #main-header .header-box .line.-top, #main-header .header-box .line.-bottom {
+      height: 3px;
+      left: -3px;
+      right: -3px;
+      transform: scale3d(0, 1, 1); }
+    #main-header .header-box .line.-right {
+      right: -3px;
+      transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+      transform-origin: top; }
+    #main-header .header-box .line.-top {
+      top: -3px;
+      transition: transform 0.08s linear 0.43s;
+      transform-origin: left; }
+    #main-header .header-box .line.-left {
+      left: -3px;
+      transition: transform 0.08s linear 0.51s;
+      transform-origin: bottom; }
+    #main-header .header-box .line.-bottom {
+      bottom: -3px;
+      transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+      transform-origin: right; }
+  #main-header .header-box a:hover:after,
+  #main-header .header-box a:active:after {
+    transform: scale3d(0, 1, 1);
+    right: -3px;
+    left: -3px;
+    transform-origin: right;
+    transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s; }
+  #main-header .header-box a:hover .line,
+  #main-header .header-box a:active .line {
+    transform: scale3d(1, 1, 1); }
+    #main-header .header-box a:hover .line.-right,
+    #main-header .header-box a:active .line.-right {
+      transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+      transform-origin: bottom; }
+    #main-header .header-box a:hover .line.-top,
+    #main-header .header-box a:active .line.-top {
+      transition: transform 0.08s linear 0.4s;
+      transform-origin: right; }
+    #main-header .header-box a:hover .line.-left,
+    #main-header .header-box a:active .line.-left {
+      transition: transform 0.08s linear 0.48s;
+      transform-origin: top; }
+    #main-header .header-box a:hover .line.-bottom,
+    #main-header .header-box a:active .line.-bottom {
+      transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+      transform-origin: left; }
 
-#about {
+@-webkit-keyframes rotateme {}@keyframes rotateme {}#about {
+  margin-top: -50px;
   background-color: #ECECEC; }
+  #about .about {
+    opacity: 0;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  #about h1, #about .gray-box, #about h5 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s; }
   #about img {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
     border: 14px solid white;
     border-radius: 15px;
     box-sizing: content-box;
     max-height: 350px;
     max-width: 100%; }
   #about p {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
     font-size: 18px; }
+
+#portfolio .port {
+  margin-top: 50vh;
+  opacity: 0;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+#portfolio #portfolio-item-1 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+
+#portfolio #portfolio-item-2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+#portfolio #portfolio-item-3 {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s; }
+
+#portfolio #portfolio-item-4 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
 
 #portfolio .portfolio-item {
   height: 350px;
@@ -69,6 +193,13 @@
   color: white; }
 
 #contact {
+  margin-top: 50vh;
+  opacity: 0;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   overflow: hidden; }
   #contact .contact-data .row {
     margin: 2vw; }
@@ -93,24 +224,25 @@
       #contact .contact-data .row .contact-social-icons a:hover {
         color: #213b50;
         border: 1px solid #213b50;
-        background-color: white; }
+        background-color: transparent; }
   #contact .contact-data form input {
-    color: white;
+    background-color: #ECECEC;
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    background-color: white;
-    border-color: solid #678e96 2px;
-    color: #fff; }
+    border: none;
+    border-bottom: solid 1px #3f4551;
+    border-color: solid #678e96 2px; }
     #contact .contact-data form input:focus {
       background-color: rgba(103, 142, 150, 0.2); }
   #contact .contact-data form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    background-color: white;
+    border: none;
+    border-bottom: solid 1px #3f4551;
     border-color: solid #678e96 2px;
-    color: #fff; }
+    background-color: #ECECEC; }
     #contact .contact-data form textarea:focus {
       background-color: rgba(103, 142, 150, 0.2); }
   #contact .contact-data form #wyslij {
@@ -123,8 +255,19 @@
     float: right;
     border: 2px #678e96 solid; }
     #contact .contact-data form #wyslij:hover {
-      background-color: white;
+      background-color: transparent;
       color: #678e96; }
+
+#skills {
+  opacity: 0;
+  margin-top: 50vh;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+  #skills figure {
+    background-color: #fff; }
 
 footer {
   background-color: #142634;
@@ -136,10 +279,34 @@ footer {
 body {
   font-family: "Lato", sans-serif;
   color: #3f4551;
-  background-color: white;
+  background-color: #ECECEC;
   font-weight: 300; }
   body .color {
     color: #678e96; }
+  body .frame-x,
+  body .frame-y {
+    opacity: 0;
+    -webkit-animation: showme 1s forwards;
+    animation: showme 1s forwards;
+    position: fixed;
+    z-index: 1000; }
+  body .frame-x {
+    height: 50px;
+    width: 100vw;
+    background-color: white; }
+  body .frame-y {
+    width: 50px;
+    height: 100vh;
+    background-color: white; }
+  body .top {
+    top: 0; }
+  body .right {
+    right: 0; }
+  body .gray-box {
+    height: 5px;
+    width: 50px;
+    background-color: #3f4551; }
+  body h1,
   body h2 {
     font-family: 'Montserrat', sans-serif; }
   body #portfolio-item-1 {
@@ -155,3 +322,21 @@ body {
     border: solid #678e96 2px;
     height: 50px;
     width: 50px; }
+
+@-webkit-keyframes showme {
+  100% {
+    opacity: 1; } }
+
+@keyframes showme {
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes showmeup {
+  100% {
+    opacity: 1;
+    margin-top: 0; } }
+
+@keyframes showmeup {
+  100% {
+    opacity: 1;
+    margin-top: 0; } }

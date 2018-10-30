@@ -8,8 +8,15 @@ $navyblue: #213b50;
 $pole-tekstowe: #2b4a64;
 $footercolor: #142634;
 
+$thick : 3px;
+$pad : 0.7em;
+$extra : calc(#{$pad} * 1.2);
+
 $lato: 'Lato', sans-serif;
 
+$small: 576px;
+$medium: 768px;
+$large: 992px;
 
 @mixin cover {
     background-repeat: no-repeat;
@@ -21,7 +28,13 @@ $lato: 'Lato', sans-serif;
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    background-color: white;
+    border: none;
+    border-bottom: solid 1px $gray;
     border-color: solid $light 2px;
-    color: #fff;
 }
+
+
+$green: #B2B100;
+$purple: #300066;
+$light-gray: #B2B2B2;
+$dark-gray: #666654;

@@ -1,3 +1,28 @@
+#portfolio .port {
+  margin-top: 50vh;
+  opacity: 0;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+#portfolio #portfolio-item-1 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+
+#portfolio #portfolio-item-2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+#portfolio #portfolio-item-3 {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s; }
+
+#portfolio #portfolio-item-4 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+
 #portfolio .portfolio-item {
   height: 350px;
   background-repeat: no-repeat;

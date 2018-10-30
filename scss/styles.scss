@@ -4,30 +4,67 @@
 @import 'section-about';
 @import 'section-portfolio';
 @import 'contact-section';
+@import 'skills';
 @import 'footer';
 
-body{
+body {
     font-family: $lato;
     color: $gray;
-    background-color: white;
+    background-color: $blue;
     font-weight: 300;
-    
-    .color{
+
+    .color {
         color: $light;
-        
     }
 
-    h2{
+    .frame-x,
+    .frame-y {
+        opacity: 0;
+        -webkit-animation: showme 1s forwards;
+        animation: showme 1s forwards;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    .frame-x {
+        height: 50px;
+        width: 100vw;
+        background-color: white;
+    }
+
+    .frame-y {
+        width: 50px;
+        height: 100vh;
+        background-color: white;
+    }
+
+    .top {
+        top: 0;
+    }
+
+    .right {
+        right: 0;
+    }
+
+    .gray-box {
+        height: 5px;
+        width: 50px;
+        background-color: $gray;
+    }
+
+    h1,
+    h2 {
         font-family: 'Montserrat', sans-serif;
     }
-    
-        #portfolio-item-1 {
+
+    #portfolio-item-1 {
         background-image: url('../css/img/andrew-neel-237802-unsplash.jpg');
     }
 
     #portfolio-item-2 {
         background-image: url('../css/img/le-buzz-567112-unsplash.jpg');
     }
+
     #portfolio-item-3 {
         background-image: url('../css/img/stil-479024-unsplash.jpg');
     }
@@ -36,11 +73,37 @@ body{
         background-image: url('../css/img/jeff-sheldon-3219-unsplash.jpg');
         background-position: bottom;
     }
-    
-    .icon{
+
+    .icon {
         border: solid $light 2px;
         height: 50px;
         width: 50px;
     }
+
+    @-webkit-keyframes showme {
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes showme {
+        100% {
+            opacity: 1;
+        }
+    }
     
+    @-webkit-keyframes showmeup {
+        100% {
+            opacity: 1;
+            margin-top: 0;
+        }
+    }
+    
+    @keyframes showmeup {
+        100% {
+            opacity: 1;
+            margin-top: 0;
+        }
+    }
+
 }
